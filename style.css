@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    border-bottom: 1px solid #bbb;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+    align-items: center;
+    height: 80px;
+}
+.nav-brand{
+    font-family: 'nunito';
+    font-size: 50px;
+    font-weight: 700;
+    color: #D39D55;
+}
+.nav-menu li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.nav-menu li a{
+    color: black;
+    font-weight: 600;
+}
+.nav-menu li a:hover{
+    color: crimson;
+}
+.nav-menu .btn-reg{
+    background-color: #2B3A55;
+    color: white;
+    padding: 14px 17px;
+    border-radius: 20px;
+}
+.nav-menu .btn-reg:hover{
+    background-color: crimson;
+    color: white;
+}
+
+main{
+    width: 1150px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    height: calc(100vh - 80px);
+}
+.tagline{
+    margin-top: 50px;
+}
+.tagline .tag{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nunito';
+    color: #0d4c92;
+    margin-bottom: 20px;
+}
+.tagline h2{
+    font-family: 'nunito';
+    font-size: 50px;
+    font-weight: 800;
+    color: #0d4c92;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+.tagline .deskripsi{
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+.btn-more{
+    background: crimson;
+    color: white;
+    padding: 14px 17px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-more:hover{
+    background: #2B3A55;
+}
+
+
+#about{
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 80px 30px;
+}
+#about img{
+    height: 300px;
+    margin-right: 100px;
+}
+.title{
+    font-family: 'nunito';
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2B3A55;
+}
+.title2{
+    font-family: 'nunito';
+    font-size: 50px;
+    color: #0d4c92;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.visi-misi p{
+    margin-bottom: 20px;
+}
+.visi-misi .btn-more{
+    display: inline-block;
+}
+
+#galeri{
+    width: 1150px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+#galeri .foto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.foto .card{
+    width: 30%;
+    margin: 15px 0;
+}
+.foto .card img{
+    width: 90%;
+    height: 180px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
+.foto .card p{
+    font-weight: 600;
+}
+
+
+/* mobile*/
+@media screen and (max-width: 576px){
+    .nav-content{
+        width: 100%;
+        display: block;
+        padding-left: 12px;
+        margin: auto;
+        height: 110px;
+    }
+    .nav-brand{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .nav-menu{
+        padding-left: 4px;
+    }
+    .nav-menu li{
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    .nav-menu li a{
+        font-size: 12px;
+    }
+    .nav-menu .btn-reg{
+        padding: 12px 15px;
+    }
+
+    main{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        height: 720px;
+    }
+    .tagline{
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    .tagline .tag{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .tagline h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 45px;
+    }
+    .tagline .deskripsi{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .btn-more{
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+    #home img{
+        width: 100%;
+    }
+
+    #about{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-top: 80px;
+    }
+    #about img{
+        height: 200px;
+        margin: 0 auto 20px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .title2{
+        font-size: 40px;
+    }
+    .visi-misi p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .visi-misi .btn-more{
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+    #galeri{
+        width: 100%;
+        margin-top: 70px;
+        padding: 10px;
+    }
+    #galeri .title{
+        margin-bottom: 10px;
+    }
+    .foto .card{
+        width: 50%;
+    }
+    .foto .card img{
+        height: 100px;
+    }
+    .foto .card p{
+        font-size: 15px;
+    }
+}
